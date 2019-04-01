@@ -9,12 +9,12 @@
 <body>
     <h1>This survey is a work in progress...</h1>
 
-    <form>
+    <form action="/api/friends" method="post">
         <label>Enter your name</label>
-        <input type="input" name="username">
+        <input type="input" name="name">
         <br>
         <label>Upload a picture of yourself</label>
-        <input type="file" name="pic" accept="image/*">
+        <input type="file" name="photo" accept="image/*">
         <br>
         <label>Question 1</label>
         <input type="radio" name="q1" value="1"> 1
