@@ -1,5 +1,5 @@
 const ROUTER = require(`express`).Router();
-const PATH = require(`path`);
+// const PATH = require(`path`);
 const DATA = require(`./../data/friends`);
 
 
