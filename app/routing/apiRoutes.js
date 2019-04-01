@@ -3,22 +3,32 @@ const ROUTER = require(`express`).Router();
 const DATA = require(`./../data/friends`);
 
 
-const ATTACH_DATA = (req, res, next) => {
+const attachData = (req, res, next) => {
     req.data = DATA;
     next();
 }
+
+const determineCompatability = (user1, user2) => {
+    let score = 0;
+    for(i in user1) {
+        score += Math.abs(user1[i] - user2[i]);
+    }
+    return score;
+}
+
 
 ROUTER.get(`/`, (req, res) => {
     console.log(`Welcome to the API`);
     res.send(`Welcome to the API`);
 });
 
-ROUTER.get(`/friends`, ATTACH_DATA, (req, res) => {
+ROUTER.get(`/friends`, attachData, (req, res) => {
     console.log(req.data);
+    // console.log(determineCompatability(req.data[0].scores, req.data[1].scores));
     res.send(req.data);
 });
 
-ROUTER.post(`/friends`, ATTACH_DATA, (req, res) => {
+ROUTER.post(`/friends`, attachData, (req, res) => {
     let person = req.body;
 
     console.log(person);
