@@ -1,6 +1,6 @@
 const ROUTER = require(`express`).Router();
-const API_ROUTES = require(`./routing/apiRoutes`);
-const HTML_ROUTES = require(`./routing/htmlRoutes`);
+const API_ROUTES = require(`./apiRoutes`);
+const HTML_ROUTES = require(`./htmlRoutes`);
 
 const PATH = require(`path`);
 

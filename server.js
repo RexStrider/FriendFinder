@@ -2,7 +2,7 @@ const EXPRESS = require(`express`);
 
 const PORT = process.env.PORT || 3000;
 
-const ROUTES = require(`./app`);
+const ROUTES = require(`./app/routing`);
 
 const APP = EXPRESS();
 
