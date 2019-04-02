@@ -2,6 +2,9 @@ const ROUTER = require(`express`).Router();
 // const PATH = require(`path`);
 const DATA = require(`./../data/friends`);
 
+// node module for underscore, convention is to use '_'
+// admittedly this is more difficult to read...
+const _ = require(`underscore`);
 
 const attachData = (req, res, next) => {
     req.data = DATA;
@@ -14,6 +17,24 @@ const totalDifference = (user1, user2) => {
         score += Math.abs(user1[i] - user2[i]);
     }
     return score;
+}
+
+const mostCompatable = user => {
+    // create shallow copy
+    let data = DATA.slice();
+ 
+    let combatScores = [];
+    data.forEach((person, index, ary) => {
+        // node module underscore contains method for a deep comparison of objects
+        // we use the _.isEqual method to determine that the person and the user are not the same
+        // this could also be accomplished by comparing against a unique id
+        if( ! _.isEqual(person, user)) {
+            combatScores.push(
+                totalDifference(user.scores, person.scores)
+            );
+        }
+    });
+    console.log(combatScores);
 }
 
 
@@ -39,7 +60,10 @@ ROUTER.post(`/friends`, attachData, (req, res) => {
         photo: `http://www.game-insight.com/files/RU/Games/GI_Airport_City/iPhone/Arts/builder.jpg`,
         scores
     } 
-    console.log(person);
+    // console.log(person);
+
+    mostCompatable(person);
+
     DATA.push(person);
     res.json(DATA);
 });
