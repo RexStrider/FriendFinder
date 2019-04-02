@@ -1,3 +1,5 @@
+const _ = require(`underscore`);
+
 const ROUTER = require(`express`).Router();
 // const PATH = require(`path`);
 const FRIENDS = require(`./../data/friends`);
@@ -22,6 +24,7 @@ ROUTER.post(`/friends`, attachData, (req, res) => {
     let closestFriend = 50;
     let closestFriendIndex = -1;
     FRIENDS.forEach( (friend, index) => {
+        // if ( ! _.isEqual(friend, req.body)) {
         const formula = (accum, curr) => parseInt(accum) + parseInt(curr);
 
         const score = friend.scores.reduce( formula );
@@ -34,10 +37,11 @@ ROUTER.post(`/friends`, attachData, (req, res) => {
             closestFriendIndex = index;
         }
         console.log(score, otherScore);
+        // }
     });
 
     console.log(`index: ${closestFriendIndex}`, `|`, `score: ${closestFriend}`);
-
+    
     FRIENDS.push(req.body);
     res.json(FRIENDS[closestFriendIndex]);
 });
