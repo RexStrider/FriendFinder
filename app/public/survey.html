@@ -5,19 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Survey</title>
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
 </head>
 <body>
     <h1>This survey is a work in progress...</h1>
 
-    <form action="/api/friends" method="post">
-        <section>
+    <!-- <form action="/api/friends" method="post"> -->
+    <form>
+        <!-- <section>
             <label>Enter your name</label>
             <input type="input" name="name">
         </section>
         <section>
             <label>Upload a picture of yourself</label>
             <input type="file" name="photo" accept="image/*">
-        </section>
+        </section> -->
         <section>
             <label>Question 1</label>
             <input type="radio" name="q1" value="1"> 1
@@ -102,5 +105,23 @@
             <input type="submit" value="Submit">
         </section>
     </form>
+
+    <script>
+        $(`form`).submit( function(event) {
+            event.preventDefault();
+
+            $.ajax({
+                url: "/api/friends",
+                method: "post",
+                data: $(this).serialize()
+            })
+            .then(result => {
+                console.log(result);
+            },
+            (jqXHR, status) => {
+                console.log(status);
+            });
+        });
+    </script>
 </body>
 </html>

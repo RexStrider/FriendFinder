@@ -28,23 +28,23 @@ ROUTER.get(`/friends`, attachData, (req, res) => {
 });
 
 ROUTER.post(`/friends`, attachData, (req, res) => {
-    let person = req.body;
-    person = {
-        name: person.name,
-        photo: person.photo,
-        scores: [
-            parseInt(person.q1),
-            parseInt(person.q2),
-            parseInt(person.q3),
-            parseInt(person.q4),
-            parseInt(person.q5),
-            parseInt(person.q6),
-            parseInt(person.q7),
-            parseInt(person.q8),
-            parseInt(person.q9),
-            parseInt(person.q10)
-        ]
-    };
+    let person = Object.values(req.body);
+    // person = {
+    //     name: person.name,
+    //     photo: person.photo,
+    //     scores: [
+    //         parseInt(person.q1),
+    //         parseInt(person.q2),
+    //         parseInt(person.q3),
+    //         parseInt(person.q4),
+    //         parseInt(person.q5),
+    //         parseInt(person.q6),
+    //         parseInt(person.q7),
+    //         parseInt(person.q8),
+    //         parseInt(person.q9),
+    //         parseInt(person.q10)
+    //     ]
+    // };
 
     console.log(person);
     DATA.push(person);
