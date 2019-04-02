@@ -8,6 +8,11 @@ const DATA = [
         "name":"Cthulu",
         "photo":"https://cdn-images-1.medium.com/max/1200/1*fmmF9LymBuB7uKXVYlshHQ.jpeg",
         "scores":[ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ]
+    },
+    {
+        "name":"Mama Bear",
+        "photo":"https://cdn-images-1.medium.com/max/1200/1*fmmF9LymBuB7uKXVYlshHQ.jpeg",
+        "scores":[ 2, 3, 1, 5, 3, 3, 2, 5, 4, 1 ]
     }
 ]
 
