@@ -11,7 +11,7 @@ const DATA = [
     },
     {
         "name":"Mama Bear",
-        "photo":"https://cdn-images-1.medium.com/max/1200/1*fmmF9LymBuB7uKXVYlshHQ.jpeg",
+        "photo":"https://static1.squarespace.com/static/54f911ace4b0f89f1295a513/557a3018e4b00537931798cf/595bf41472af65691b813357/1551918490390/bear+print.jpg?format=500w",
         "scores":[ 2, 3, 1, 5, 3, 3, 2, 5, 4, 1 ]
     }
 ]
