@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-escores[u]iv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+
     <title>Survey</title>
 
     <script src="https://code.jquery.com/jquery.js"></script>
@@ -19,94 +22,200 @@
     <form>
         <section>
             <label>Enter your name</label>
-            <input type="input" name="name">
+            <section>
+                <input type="input" name="name">
+            </section>
         </section>
         <section>
-            <label>Upload a picture of yourself</label>
-            <input type="text" name="photo">
+            <label>Enter a URL to a picture of yourself</label>
+            <section>
+                <input type="text" name="photo">
+            </section>
         </section>
         <section>
             <label>Dogs or cats?</label>
-            <input type="radio" name="scores[0]" value="1" checked> only dogs
-            <input type="radio" name="scores[0]" value="2"> prefers dogs
-            <input type="radio" name="scores[0]" value="3"> likes both
-            <input type="radio" name="scores[0]" value="4"> prefers cats
-            <input type="radio" name="scores[0]" value="5"> only cats
+            <section>
+                <input type="radio" name="scores[0]" value="1" checked> only dogs
+            </section>
+            <section>
+                <input type="radio" name="scores[0]" value="2"> prefers dogs
+            </section>
+            <section>
+                <input type="radio" name="scores[0]" value="3"> likes both
+            </section>
+            <section>
+                <input type="radio" name="scores[0]" value="4"> prefers cats
+            </section>
+            <section>
+                <input type="radio" name="scores[0]" value="5"> only cats
+            </section>
         </section>
         <section>
             <label>Vegies or meat?</label>
-            <input type="radio" name="scores[1]" value="1" checked> only vegies
-            <input type="radio" name="scores[1]" value="2"> prefers vegies
-            <input type="radio" name="scores[1]" value="3"> likes both
-            <input type="radio" name="scores[1]" value="4"> prefers meat
-            <input type="radio" name="scores[1]" value="5"> only meat
+            <section>
+                <input type="radio" name="scores[1]" value="1" checked> only vegies
+            </section>
+            <section>
+                <input type="radio" name="scores[1]" value="2"> prefers vegies
+            </section>
+            <section>
+                <input type="radio" name="scores[1]" value="3"> likes both
+            </section>
+            <section>
+                <input type="radio" name="scores[1]" value="4"> prefers meat
+            </section>
+            <section>
+                <input type="radio" name="scores[1]" value="5"> only meat
+            </section>
         </section>
         <section>
             <label>Liberal or conservative?</label>
-            <input type="radio" name="scores[2]" value="1" checked> liberal all the way
-            <input type="radio" name="scores[2]" value="2"> mostly liberal
-            <input type="radio" name="scores[2]" value="3"> both
-            <input type="radio" name="scores[2]" value="4"> mostly conservative
-            <input type="radio" name="scores[2]" value="5"> conservative all the way
+            <section>
+                <input type="radio" name="scores[2]" value="1" checked> liberal all the way
+            </section>
+            <section>
+                <input type="radio" name="scores[2]" value="2"> mostly liberal
+            </section>
+            <section>
+                <input type="radio" name="scores[2]" value="3"> both
+            </section>
+            <section>
+                <input type="radio" name="scores[2]" value="4"> mostly conservative
+            </section>
+            <section>
+                <input type="radio" name="scores[2]" value="5"> conservative all the way
+            </section>
         </section>
         <section>
             <label>Oranges or apples?</label>
-            <input type="radio" name="scores[3]" value="1" checked> only the apples
-            <input type="radio" name="scores[3]" value="2"> apples are good
-            <input type="radio" name="scores[3]" value="3"> both are good
-            <input type="radio" name="scores[3]" value="4"> oranges are tasty
-            <input type="radio" name="scores[3]" value="5"> eating oranges all day
+            <section>
+                <input type="radio" name="scores[3]" value="1" checked> only the apples
+            </section>
+            <section>
+                <input type="radio" name="scores[3]" value="2"> apples are good
+            </section>
+            <section>
+                <input type="radio" name="scores[3]" value="3"> both are good
+            </section>
+            <section>
+                <input type="radio" name="scores[3]" value="4"> oranges are tasty
+            </section>
+            <section>
+                <input type="radio" name="scores[3]" value="5"> eating oranges all day
+            </section>
         </section>
         <section>
             <label>Windows or Mac</label>
-            <input type="radio" name="scores[4]" value="1" checked> Windows is the OS for me
-            <input type="radio" name="scores[4]" value="2"> I prefer Windows
-            <input type="radio" name="scores[4]" value="3"> I'll work with Windows, Mac, or even Linux
-            <input type="radio" name="scores[4]" value="4"> Macs are my preference
-            <input type="radio" name="scores[4]" value="5"> I only use Macs
+            <section>
+                <input type="radio" name="scores[4]" value="1" checked> Windows is the OS for me
+            </section>
+            <section>
+                <input type="radio" name="scores[4]" value="2"> I prefer Windows
+            </section>
+            <section>
+                <input type="radio" name="scores[4]" value="3"> I'll work with Windows, Mac, or even Linux
+            </section>
+            <section>
+                <input type="radio" name="scores[4]" value="4"> Macs are my preference
+            </section>
+            <section>
+                <input type="radio" name="scores[4]" value="5"> I only use Macs
+            </section>
         </section>
         <section>
             <label>Chocolate or peanut butter</label>
-            <input type="radio" name="scores[5]" value="1" checked> Chocolate is my favorite!!!1
-            <input type="radio" name="scores[5]" value="2"> Chocolate is my preference
-            <input type="radio" name="scores[5]" value="3"> Peanut butter chocolate swirl!
-            <input type="radio" name="scores[5]" value="4"> I gotta go with the peanut butter
-            <input type="radio" name="scores[5]" value="5"> Peanut Butter all the way
+            <section>
+                <input type="radio" name="scores[5]" value="1" checked> Chocolate is my favorite!!!1
+            </section>
+            <section>
+                <input type="radio" name="scores[5]" value="2"> Chocolate is my preference
+            </section>
+            <section>
+                <input type="radio" name="scores[5]" value="3"> Peanut butter chocolate swirl!
+            </section>
+            <section>
+                <input type="radio" name="scores[5]" value="4"> I gotta go with the peanut butter
+            </section>
+            <section>
+                <input type="radio" name="scores[5]" value="5"> Peanut Butter all the way
+            </section>
         </section>
         <section>
             <label>Which color do you prefer?</label>
-            <input type="radio" name="scores[6]" value="1" checked> yellow
-            <input type="radio" name="scores[6]" value="2"> orange
-            <input type="radio" name="scores[6]" value="3"> red
-            <input type="radio" name="scores[6]" value="4"> purple
-            <input type="radio" name="scores[6]" value="5"> blue
+            <section>
+                <input type="radio" name="scores[6]" value="1" checked> yellow
+            </section>
+            <section>
+                <input type="radio" name="scores[6]" value="2"> orange
+            </section>
+            <section>
+                <input type="radio" name="scores[6]" value="3"> red
+            </section>
+            <section>
+                <input type="radio" name="scores[6]" value="4"> purple
+            </section>
+            <section>
+                <input type="radio" name="scores[6]" value="5"> blue
+            </section>
         </section>
         <section>
             <label>Fantasy or Science Fiction?</label>
-            <input type="radio" name="scores[7]" value="1" checked> Fantasy genre rules!
-            <input type="radio" name="scores[7]" value="2"> I prefer Fantasy
-            <input type="radio" name="scores[7]" value="3"> I like both
-            <input type="radio" name="scores[7]" value="4"> I prefer Science Fiction
-            <input type="radio" name="scores[7]" value="5"> Science Fiction is the best!
+            <section>
+                <input type="radio" name="scores[7]" value="1" checked> Fantasy genre rules!
+            </section>
+            <section>
+                <input type="radio" name="scores[7]" value="2"> I prefer Fantasy
+            </section>
+            <section>
+                <input type="radio" name="scores[7]" value="3"> I like both
+            </section>
+            <section>
+                <input type="radio" name="scores[7]" value="4"> I prefer Science Fiction
+            </section>
+            <section>
+                <input type="radio" name="scores[7]" value="5"> Science Fiction is the best!
+            </section>
         </section>
         <section>
             <label>Marvel or DC?</label>
-            <input type="radio" name="scores[8]" value="1" checked> Marvel is the coolest
-            <input type="radio" name="scores[8]" value="2"> Marvel is preferred
-            <input type="radio" name="scores[8]" value="3"> I like both
-            <input type="radio" name="scores[8]" value="4"> DC is my prefernece
-            <input type="radio" name="scores[8]" value="5"> DC for sure
+            <section>
+                <input type="radio" name="scores[8]" value="1" checked> Marvel is the coolest
+            </section>
+            <section>
+                <input type="radio" name="scores[8]" value="2"> Marvel is preferred
+            </section>
+            <section>
+                <input type="radio" name="scores[8]" value="3"> I like both
+            </section>
+            <section>
+                <input type="radio" name="scores[8]" value="4"> DC is my prefernece
+            </section>
+            <section>
+                <input type="radio" name="scores[8]" value="5"> DC for sure
+            </section>
         </section>
         <section>
             <label>Pirates or ninjas?</label>
-            <input type="radio" name="scores[9]" value="1" checked> arrrrr you kidding me? Pirates are the best!
-            <input type="radio" name="scores[9]" value="2"> Pirates are cool
-            <input type="radio" name="scores[9]" value="3"> Both are ok...
-            <input type="radio" name="scores[9]" value="4"> Ninjas are awesome
-            <input type="radio" name="scores[9]" value="5"> Ninjas forever!!!1
+            <section>
+                <input type="radio" name="scores[9]" value="1" checked> arrrrr you kidding me? Pirates are the best!
+            </section>
+            <section>
+                <input type="radio" name="scores[9]" value="2"> Pirates are cool
+            </section>
+            <section>
+                <input type="radio" name="scores[9]" value="3"> Both are ok...
+            </section>
+            <section>
+                <input type="radio" name="scores[9]" value="4"> Ninjas are awesome
+            </section>
+            <section>
+                <input type="radio" name="scores[9]" value="5"> Ninjas forever!!!1
+            </section>
         </section>
         <section>
-            <input type="submit" value="Submit">
+            <section>
+                <input type="submit" value="Submit">
+            </section>
         </section>
     </form>
 
