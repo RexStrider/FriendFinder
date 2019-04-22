@@ -1,7 +1,15 @@
+html {
+    background-color: lightblue;
+}
+
 body {
     color: darkblue;
-
+    
     padding-left: 30%;
+}
+
+.link {
+    margin: 10px;
 }
 
 form section {
