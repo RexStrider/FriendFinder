@@ -38,11 +38,11 @@ node server.js
 
 You should see a message in your CLI indicating the application has started.
 
-![server has started on port 3000](./app/static/assets/images/cli-example.png)
+![server has started on port 3000](./app/static/assets/images/cli-example.PNG)
 
 After you see this message, go to your browser and enter localhost:3000 into the URL field
 
-![browser example](./app/static/assets/images/browser-example.png)
+![browser example](./app/static/assets/images/browser-example.PNG)
 
 and that's all there is to it.
 
