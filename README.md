@@ -8,9 +8,11 @@ This basic application provides a survey of 10 questions to determine who you ar
 
 The purpose of this application was to test and experiment with Express routes.
 
-## Instructions
+If you would like to check out this simple application, then click on the link below.
 
-If your interested in checking out this application, perform the following steps.
+### [Friend Finder](https://friend-finder-arw.herokuapp.com/)
+
+## Instructions
 
 You will need to first clone this repo (you will need to install [git](https://git-scm.com/) to do this).
 
