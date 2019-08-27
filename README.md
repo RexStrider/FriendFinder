@@ -10,7 +10,7 @@ The purpose of this application was to test and experiment with Express routes.
 
 If you would like to check out this simple application, then click on the link below.
 
-### [Friend Finder](https://friend-finder-arw.herokuapp.com/)
+#### [Friend Finder](https://friend-finder-arw.herokuapp.com/)
 
 ## Instructions
 
