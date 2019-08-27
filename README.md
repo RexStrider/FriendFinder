@@ -14,7 +14,7 @@ If you would like to check out this simple application, then click on the link b
 
 ## Instructions
 
-You will need to first clone this repo (you will need to install [git](https://git-scm.com/) to do this).
+If you want to run the code locally, you will need to first clone this repo (you will need to install [git](https://git-scm.com/) to do this).
 
 ```
 // cloning with ssh
